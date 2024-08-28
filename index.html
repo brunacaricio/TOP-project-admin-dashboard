@@ -10,76 +10,145 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="sidebar-title">
-        <i class="fa-solid fa-gauge"></i>
-        <div>Dashboard</div>
-      </div>
-      <div class="sidebar-middle">
-        <div class="item">
+          <i class="fa-solid fa-gauge dashboard"></i>
+          <div class="dashboard"><b>Dashboard</b></div>
           <i class="fa-solid fa-house"></i>
           <div>Home</div>
-        </div>
-        <div class="item">
           <i class="fa-solid fa-user"></i>
           <div>Profile</div>
-        </div>
-        <div class="item">
           <i class="fa-solid fa-message"></i>
           <div>Messages</div>
-        </div>
-        <div class="item">
           <i class="fa-solid fa-clock-rotate-left"></i>
           <div>History</div>
-        </div>
-        <div class="item">
           <i class="fa-solid fa-list-check"></i>
           <div>Tasks</div>
-        </div>
-        <div class="item">
           <i class="fa-solid fa-people-group"></i>
           <div>Communities</div>
-        </div>
-        <div class="sidebar-bottom">
-          <div class="item">
-            <i class="fa-solid fa-gear"></i>
-            <div>Settings</div>
-          </div>
-          <div class="item">
-            <i class="fa-solid fa-circle-question"></i>
-            <div>Support</div>
-          </div>
-          <div class="item">
-            <i class="fa-solid fa-unlock-keyhole"></i>
-            <div>Privacy</div>
-          </div>
-        </div>
-      </div>
+          <i class="fa-solid fa-gear settings"></i>
+          <div class="settings">Settings</div>
+          <i class="fa-solid fa-circle-question"></i>
+          <div>Support</div>
+          <i class="fa-solid fa-unlock-keyhole"></i>
+          <div>Privacy</div>
     </div>
 
     <div class="header">
-      <div>
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="search">
         <input type="text">
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <div>
+      <div class="user-info">
         <i class="fa-solid fa-bell"></i>
         <img src="images/avatar.jpg" alt="Profile Picture">
         <p>Bruna Caricio</p>
       </div>
-      <div>
+      <div class="greetings">
+        <img src="images/avatar.jpg" alt="Profile Picture">
         <div>
-          <div>
-            <img src="images/avatar.jpg" alt="Profile Picture">
-          </div>
-          <div>
-            <div>
-              Hi there,
-            </div>
-            <div>
-              Bruna Caricio (@brunacaricio)
-            </div>
-          </div>
+          <div>Hi there,</div>
+          <div><b>Bruna Caricio (@brunacaricio)</b></div>
         </div>
+      </div>
+      <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+
+    <div class="title"><b>Your projects</b></div>
+    <div class="title less-margin"><b>Announcements</b></div>
+    <div class="main-content">
+      <div class="card">
+        <p><b>Super Cool Project</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="card">
+        <p><b>Less of a Cool Project</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="card">
+        <p><b>Impossible App</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="card">
+        <p><b>Easy Peasy App</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="card">
+        <p><b>Ad Blocker</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="card">
+        <p><b>Smile Maker</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam repudiandae quo quam excepturi atque minima.</p>
+        <div>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="announcements">
+      <div class="smaller-card">
+        <p><b>Site Maintenance</b></p>
+        <p>Hic vitae, minima asperiores aut delectus voluptas, qui amet itaque maiores id?</p>
+        <hr>
+        <p><b>Community Share Day</b></p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr>
+        <p><b>Updated Privacy Policy</b></p>
+        <p>Saepe natus doloremque in perferendis enim ad, praesentium eveniet!</p>
+      </div>
+      <p class="title less-margin"><b>Trending</b></p>
+      <div class="smaller-card trending">
+        <img src="images/horse.png" alt="Horse @tegan">
+        <div class="trending-social-media">
+          <p><b>@tegan</b></p>
+          <p>World peace builder</p>
+        </div>
+        <img src="images/avatar.jpg" alt="Bruna @brunacaricio">
+        <div class="trending-social-media">
+          <p><b>@brunacaricio</b></p>
+          <p>Super Cool Project</p>
+        </div>
+        <img src="images/et.jpg" alt="Et @kendall">
+        <div class="trending-social-media">
+          <p><b>@kendall</b></p>
+          <p>Life Changing App</p>
+        </div>
+        <img src="images/penguin.jpg" alt="Penguin @alex">
+        <div class="trending-social-media">
+          <p><b>@alex</b></p>
+          <p>No Traffic Maker</p>
+        </div>
+
       </div>
     </div>
   </div>
