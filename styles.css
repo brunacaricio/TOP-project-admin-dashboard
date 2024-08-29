@@ -119,8 +119,8 @@ input {
 
 .buttons {
   display: flex;
-  gap: 5px;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: end;
   align-items: center;
 }
 
