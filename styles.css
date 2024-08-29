@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 body,
 :root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --purple: #674188;
+  --ligther-purple: #C8A1E0;
+  --light-pink: #E2BFD9;
+  --beige: #F7EFE5;
+  --gray: #1e293b;
+  background-color: var(--beige);
 }
 
 .container {
   display: grid;
   grid-template-columns: auto 3fr 1fr;
   grid-template-rows: auto auto 1fr;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .sidebar {
-  background-color: rgb(17, 17, 244);
+  background-color: var(--purple);
   grid-row: 1 / -1;
   padding: 30px 20px;
   color: white;
@@ -25,7 +36,14 @@ body,
 .sidebar div:hover,
 .sidebar i:hover {
   cursor: pointer;
-  color:rgb(159, 122, 194)
+  color: var(--ligther-purple);
+  font-size: 1.1rem;
+  transition: 1s ease-out;
+}
+
+.sidebar div:first-of-type,
+.sidebar i:first-of-type {
+  text-shadow: 2px 2px #313131;
 }
 
 .dashboard {
@@ -40,10 +58,11 @@ body,
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  background-color: rgb(228, 228, 228);
+  background-color: var(--light-pink);
   padding: 20px 30px;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  color: var(--gray);
 }
 
 .search {
@@ -52,15 +71,16 @@ body,
 }
 
 .search i:hover {
-  color: gray;
+  color: var(--gray);
   font-size: 1rem;
   cursor: pointer;
 }
 
 input {
   margin-right: 10px;
-  width: 300px;
+  width: 350px;
   padding: 3px;
+  padding-left: 10px;
   border-radius: 10px;
   border: none;
 }
@@ -100,12 +120,12 @@ input {
   border: none;
   padding: 7px 15px;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: var(--purple);
   color: white;
 }
 
 .buttons button:hover {
-  background-color: rgb(159, 122, 194);
+  background-color: var(--ligther-purple);
   cursor: pointer;
 }
 
@@ -115,9 +135,11 @@ input {
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 20px;
   margin-left: 20px;
+  color: var(--purple);
+  font-size: 1.2rem;
 }
 
 .less-margin {
@@ -126,22 +148,47 @@ input {
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: 20px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
   margin: 20px;
 }
 
 .card {
-  background-color: antiquewhite;
-  padding: 5px 15px;
-  border-left: 5px solid yellow;
+  background-color: var(--light-pink);
+  padding: 10px 15px;
+  border-left: 5px solid var(--purple);
   border-radius: 5px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--gray);
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: var(--ligther-purple)
+}
+
+.card p:first-of-type {
+  margin-bottom: 0;
 }
 
 .card div {
   display: flex;
   justify-content: end;
   gap: 6px;
+  padding-bottom: 4px;
+}
+
+.card b:hover,
+.card div i:hover,
+.smaller-card b:hover,
+.trending-social-media b:hover,
+.trending img:hover {
+  cursor: pointer;
+  color: var(--purple);
 }
 
 .announcements {
@@ -151,7 +198,7 @@ input {
 }
 
 .smaller-card {
-  background-color: antiquewhite;
+  background-color: var(--light-pink);
   padding: 5px 15px;
   font-size: 0.8rem;
   border-radius: 5px;
