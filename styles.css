@@ -33,8 +33,8 @@ body,
   align-content: start;
 }
 
-.sidebar div:hover,
-.sidebar i:hover {
+.sidebar div:not(:first-of-type):hover,
+.sidebar i:not(:first-of-type):hover {
   cursor: pointer;
   color: var(--ligther-purple);
   font-size: 1.1rem;
@@ -71,9 +71,10 @@ body,
 }
 
 .search i:hover {
-  color: var(--gray);
-  font-size: 1rem;
   cursor: pointer;
+  color: var(--purple);
+  font-size: 1.1rem;
+  transition: 1s ease-out;
 }
 
 input {
@@ -104,6 +105,13 @@ input {
   border-radius: 50%;
 }
 
+.user-info i:hover,
+.user-info img:hover,
+.user-info p:hover {
+  cursor: pointer;
+  color: var(--purple);
+}
+
 .greetings {
   display: flex;
   gap: 12px;
@@ -122,6 +130,7 @@ input {
   border-radius: 10px;
   background-color: var(--purple);
   color: white;
+  box-shadow: 1px 1px 2px rgb(41, 41, 41);
 }
 
 .buttons button:hover {
